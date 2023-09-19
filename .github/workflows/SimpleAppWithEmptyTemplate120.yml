@@ -1,10 +1,10 @@
-name: 建置 .NET Core 應用程式並部署到 Web 應用程式 SimpleAppWithEmptyTemplate1
+name: 建置 .NET Core 應用程式並部署到 Web 應用程式 SimpleAppWithEmptyTemplate120
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: SimpleAppWithEmptyTemplate1
+  AZURE_WEBAPP_NAME: SimpleAppWithEmptyTemplate120
   AZURE_WEBAPP_PACKAGE_PATH: ./published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 7.0.x
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.SimpleAppWithEmptyTemplate1_1F0F }}
+        publish-profile: ${{ secrets.SimpleAppWithEmptyTemplate120_4122 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
